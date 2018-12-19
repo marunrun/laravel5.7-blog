@@ -26,6 +26,10 @@ Route::middleware('auth')->namespace('Admin')->group(function (){
     Route::resource('admin/post','PostController');
     Route::resource('admin/tag','TagController',['except' => 'show']);
     Route::get('admin/upload','UploadController@index');
+    Route::post('admin/upload/file','UploadController@uploadFile');
+    Route::delete('admin/upload/file','UploadController@deleteFile');
+    Route::post('admin/upload/folder','UploadController@createFolder');
+    Route::delete('admin/upload/folder','UploadController@deleteFolder');
 });
 
 Route::get('/login','Auth\LoginController@showLoginForm')->name('login');
