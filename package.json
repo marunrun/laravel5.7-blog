@@ -19,6 +19,7 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
+        "startbootstrap-clean-blog": "^5.0.1",
         "vue": "^2.5.17"
     },
     "dependencies": {

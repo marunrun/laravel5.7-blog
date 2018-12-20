@@ -169,7 +169,7 @@
             </div>
 
             <div class="modal-body">
-                <img src="x" class="image-responsive center-block" id="preview-image" alt="">
+                <img src="" class="image-responsive center-block" id="preview-image" alt="">
             </div>
 
             <div class="modal-footer">
