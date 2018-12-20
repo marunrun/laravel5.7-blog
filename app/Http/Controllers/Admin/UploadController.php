@@ -36,9 +36,7 @@ class UploadController extends Controller
         $file_name = $file_name ? $file_name . '.' . $file->extension() : $file->getClientOriginalName();
         $path = str_finish($request->get('folder'), '/') . $file_name;
         $content = $file->get();
-
         $res = $this->manager->uploadFile($path, $content);
-
         if ($res === true) {
             return redirect()
                 ->back()

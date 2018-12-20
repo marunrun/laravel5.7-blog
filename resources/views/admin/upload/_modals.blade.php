@@ -45,7 +45,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">请确认</h4>
-                <button class="close" data-dismiss="modal">x</button>
+                <button class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
                 <p class="lead">
@@ -79,7 +79,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">请确认</h4>
-                <button class="close" data-dismiss="modal">x</button>
+                <button class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
                 <p class="lead">
@@ -116,7 +116,7 @@
 
                 <div class="modal-header">
                     <h4 class="modal-title">上传新文件</h4>
-                    <button class="close" type="button" data-dismiss="modal">x</button>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
                 </div>
 
                 <div class="modal-body">
@@ -165,7 +165,7 @@
 
             <div class="modal-header">
                 <h4 class="modal-title">图片预览</h4>
-                <button class="close" data-dismiss="modal" type="button">x</button>
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
             </div>
 
             <div class="modal-body">
