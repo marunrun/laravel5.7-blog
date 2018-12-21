@@ -1,11 +1,16 @@
 <?php
 
 return [
-    'title' => 'My blog',
-    'posts_per_page' => 5,
+
+    'page_image' => 'home-bg.jpg',
+    'name' => 'Marun',
+    'title' => 'Marun-Blog',
+    'subtitle' => 'https://runrun520.cn',
+    'description' => 'Marun-Blog 分享个人生活',
+    'author' => 'marun',
+    'posts_per_page' => 10,
     'uploads' => [
         'storage' => 'public',
-        'webpath' => '/storage'
+        'webpath' => '/storage/uploads'
     ],
-    'page_image' => '/storage/uploads/about-bg.jpg'
 ];

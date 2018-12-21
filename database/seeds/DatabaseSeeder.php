@@ -14,6 +14,9 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();  // 关闭模型保护
         // $this->call(UsersTableSeeder::class);
+        $this->call(TagsTableSeeder::class);
         $this->call(PostTableSeeder::class);
+
+        Model::reguard();
     }
 }

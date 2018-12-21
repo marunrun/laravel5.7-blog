@@ -42,4 +42,11 @@ class Tag extends Model
         }
 
     }
+
+    public static function layout($tag, $default ='blog.index')
+    {
+        $layout = static::where('tag',$tag)->get()->pluck('layout')->first();
+
+        return $layout ?: $default;
+    }
 }
