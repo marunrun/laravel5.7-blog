@@ -13,3 +13,23 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+// Selectize 暂不支持 Bootstrap 4
+mix.combine([
+    'node_modules/selectize/dist/css/selectize.css',
+    'node_modules/selectize/dist/css/selectize.bootstrap3.css'
+], 'public/css/selectize.default.css');
+
+mix.combine([
+    'node_modules/pickadate/lib/compressed/themes/default.css',
+    'node_modules/pickadate/lib/compressed/themes/default.date.css',
+    'node_modules/pickadate/lib/compressed/themes/default.time.css',
+], 'public/css/pickadate.min.css');
+
+mix.copy('node_modules/selectize/dist/js/standalone/selectize.min.js',
+    'public/js/selectize.min.js');
+
+mix.combine([
+    'node_modules/pickadate/lib/compressed/picker.js',
+    'node_modules/pickadate/lib/compressed/picker.date.js',
+    'node_modules/pickadate/lib/compressed/picker.time.js'
+], 'public/js/pickadate.min.js');

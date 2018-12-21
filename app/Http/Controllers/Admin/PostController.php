@@ -19,8 +19,8 @@ class PostController extends Controller
         'content' => '',
         'meta_description' => '',
         'is_draft' => '',
-        'published_date' => '',
-        'published_time' => '',
+        'publish_date' => '',
+        'publish_time' => '',
         'layout' => 'blog.layouts.post',
         'tags' => []
     ];
@@ -42,7 +42,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        $fields = $this->fieldListl;
+        $fields = $this->fieldList;
 
         $when = Carbon::now()->addHour();
         $fields['publish_date'] = $when->format('Y-m-d');
@@ -69,24 +69,14 @@ class PostController extends Controller
      */
     public function store(PostCreateRequest $request)
     {
-        $post = Post::created($request->postFillData());
-        $post->syncTags($request->get('tags', []));
+        $post = Post::create($request->postFillData());
+        $post->syncTag($request->get('tags',[]));
 
         return redirect()
             ->route('post.index')
             ->with('success','新文章创建成功');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -142,7 +132,7 @@ class PostController extends Controller
 
         $post->save();
 
-        $post->syncTags($request->get('tags', []));
+        $post->syncTag($request->get('tags', []));
 
         if ($request->action === 'continue') {
             return redirect()

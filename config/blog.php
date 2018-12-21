@@ -7,4 +7,5 @@ return [
         'storage' => 'public',
         'webpath' => '/storage'
     ],
+    'page_image' => '/storage/uploads/about-bg.jpg'
 ];

@@ -4258,7 +4258,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
-  /*height: calc(1.68125rem + 2px);*/
+  height: calc(1.68125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
@@ -16362,7 +16362,7 @@ h6 {
 }
 
 a {
-  /*color: #212529;*/
+  color: #212529;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
