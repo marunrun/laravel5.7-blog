@@ -103,9 +103,7 @@
         <div class="form-group row">
             <label for="meta_description" class="col-md-3 col-form-label">摘要</label>
             <div class="col-md-8">
-                <textarea name="meta_description" id=meta_description""  rows="6">
-                    {{ $meta_description }}
-                </textarea>
+                <textarea name="meta_description" id=meta_description""  rows="6">{{ $meta_description }}</textarea>
             </div>
         </div>
 

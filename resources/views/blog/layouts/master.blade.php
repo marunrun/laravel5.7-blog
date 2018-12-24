@@ -19,6 +19,7 @@
     @yield('page-header')
 
     @yield('content')
+    @yield('comments')
 
     @include('blog.partials.page-footer')
 

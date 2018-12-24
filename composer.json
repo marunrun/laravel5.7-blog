@@ -16,7 +16,8 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "michelf/php-markdown": "^1.8",
-        "michelf/php-smartypants": "^1.8"
+        "michelf/php-smartypants": "^1.8",
+        "suin/php-rss-writer": "^1.6"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
